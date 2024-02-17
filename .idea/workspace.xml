@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5419d-9111-484e-a425-43c55bdee531" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/praktika_1/SmallestUniqueNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_1/SmallestUniqueNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708193339385</updated>
-      <workItem from="1708193340420" duration="1354000" />
+      <workItem from="1708193340420" duration="1713000" />
     </task>
     <servers />
   </component>
