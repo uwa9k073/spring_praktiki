@@ -30,6 +30,7 @@ public class Main {
     humans = humanList.stream()
         .filter(human -> human.getBirthDate().isBefore(LocalDate.of(2000, 6, 24)))
         .collect(Collectors.toList());
+    System.out.println("Фильтрация по дате рождения:");
     humans.forEach(System.out::println);
 
 
