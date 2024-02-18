@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5419d-9111-484e-a425-43c55bdee531" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/praktika_1/SmallestUniqueNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/praktika_1/SmallestUniqueNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncMapTest.java" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncMapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 41838cf8eb6051e6cd877d67cafe9ad7274fea37
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
