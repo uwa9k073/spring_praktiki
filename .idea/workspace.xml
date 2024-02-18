@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84c5419d-9111-484e-a425-43c55bdee531" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/praktika_3/SyncList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/uwa9k073/praktika_3/SyncMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/github/uwa9k073/praktika_3/SyncMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +65,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -126,6 +126,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.github.uwa9k073.praktika_3" />
       <recent name="com.github.uwa9k073.praktika_2" />
       <recent name="com.github.uwa9k073.praktika_1" />
     </key>
