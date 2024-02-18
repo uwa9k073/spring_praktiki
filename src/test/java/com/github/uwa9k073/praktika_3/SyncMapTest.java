@@ -12,10 +12,12 @@ class SyncMapTest {
     SyncMap<String, Integer> map = new SyncMap<>();
     Thread thread1 = new Thread(()->map.put("key1", 1));
     Thread thread2 = new Thread(()->map.put("key2", 2));
+
     thread1.start();
     thread2.start();
     thread1.join();
     thread2.join();
+
     assertEquals(1, map.get("key1"));
     assertEquals(2, map.get("key2"));
   }

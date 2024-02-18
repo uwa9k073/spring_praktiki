@@ -1,5 +1,6 @@
 package com.github.uwa9k073.praktika_1;
 
+import java.util.Arrays;
 import java.util.function.Function;
 
 public class SmallestUniqueNumber implements Function<int[], String> {
@@ -29,6 +30,15 @@ public class SmallestUniqueNumber implements Function<int[], String> {
     }
 
     return result.toString();
+  }
+
+
+  public static void main(String[] args) {
+    var function = new SmallestUniqueNumber();
+
+    int[] numbers = {1,3,1};
+    System.out.println("Array: " + Arrays.toString(numbers));
+    System.out.println(function.apply(numbers));
   }
 
 }
