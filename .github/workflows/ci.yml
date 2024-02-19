@@ -18,8 +18,7 @@ jobs:
         with:
           java-version: '21'
           distribution: 'oracle'
-          cache: gradle
-          cache-dependecy-path: ${{env.working-directory}}/.gradle
+          cache: ./praktiki_1-9/gradle
       - name: Grant execute permission for gradlew
         working-directory: ${{env.working-directory}}
         run: chmod +x ./gradlew
