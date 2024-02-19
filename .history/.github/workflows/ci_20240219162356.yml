@@ -7,7 +7,8 @@ name: CI
       - develop
 
 jobs:
-  build-praktiki-1-9:
+  build:
+    name: Build and Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,8 +19,8 @@ jobs:
           distribution: 'oracle'
           cache: gradle
       - name: Grant execute permission for gradlew
-        run: chmod +x ./praktiki_1-9/gradlew
+        run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./praktiki_1-9/gradlew build
+        run: ./gradlew build
       - name: Run tests
-        run: ./praktiki_1-9/gradlew test --warning-mode=all
+        run: ./gradlew test --warning-mode=all

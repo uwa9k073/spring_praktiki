@@ -11,15 +11,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        working-directory:  ./praktiki_1-9
       - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
           java-version: '21'
           distribution: 'oracle'
           cache: gradle
+        working-directory:  ./praktiki_1-9
       - name: Grant execute permission for gradlew
-        run: chmod +x ./praktiki_1-9/gradlew
+        run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./praktiki_1-9/gradlew build
+        run: ./gradlew build
       - name: Run tests
-        run: ./praktiki_1-9/gradlew test --warning-mode=all
+        run: ./gradlew test --warning-mode=all

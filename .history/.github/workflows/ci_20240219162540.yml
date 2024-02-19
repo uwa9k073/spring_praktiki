@@ -17,6 +17,7 @@ jobs:
           java-version: '21'
           distribution: 'oracle'
           cache: gradle
+        working-directory:  ./praktiki_1-9
       - name: Grant execute permission for gradlew
         run: chmod +x ./praktiki_1-9/gradlew
       - name: Build with Gradle
