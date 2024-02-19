@@ -7,8 +7,12 @@ name: CI
       - develop
 
 jobs:
-  build:
+  build-praktiki-1-9:
+    defaults:
+      run:
+        working-directory: praktiki_1-9
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 21
@@ -18,7 +22,7 @@ jobs:
           distribution: 'oracle'
           cache: gradle
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x ./gradlew
       - name: Build with Gradle
         run: ./gradlew build
       - name: Run tests
