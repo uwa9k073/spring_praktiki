@@ -1,12 +1,11 @@
 package com.github.uwa9k073.praktika_6.buidler;
 
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Data
+@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Request {
@@ -16,10 +15,6 @@ public class Request {
   private Integer retries;
   private Timeout timeout;
 
-
-  public void setTimeout(Integer amount, TimeUnit measure) {
-    this.timeout = new Timeout(amount, measure);
-  }
 
   static public RequestBuilder builder(){
     return new DefaultRequestBuilder();
