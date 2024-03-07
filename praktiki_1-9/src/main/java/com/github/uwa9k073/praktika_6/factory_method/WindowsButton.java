@@ -9,7 +9,7 @@ public class WindowsButton implements Button {
 
   @Override
   public void onClick() {
-    System.out.println("Handle onClick in Windows button");
+    System.out.println("Click on Windows button");
   }
 
 }

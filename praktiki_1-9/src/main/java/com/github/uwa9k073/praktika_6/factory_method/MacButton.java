@@ -9,6 +9,6 @@ public class MacButton implements Button {
 
   @Override
   public void onClick() {
-    System.out.println("Handle onClick in MAC button");
+    System.out.println("Click MAC button");
   }
 }
