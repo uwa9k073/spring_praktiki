@@ -1,9 +1,10 @@
 package com.github.uwa9k073.praktika_5;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public class LazySingleton {
   private static LazySingleton instance;
-
-  private LazySingleton(){}
 
   public static synchronized LazySingleton getInstance(){
     if (instance==null){
