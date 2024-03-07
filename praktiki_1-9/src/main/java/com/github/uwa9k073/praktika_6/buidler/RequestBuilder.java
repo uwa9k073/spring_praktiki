@@ -4,30 +4,30 @@ import java.util.concurrent.TimeUnit;
 
 public interface RequestBuilder {
 
-  public Request build();
+  Request build();
 
-  public RequestBuilder get(String url);
+  RequestBuilder get(String url);
 
-  public RequestBuilder post(String url);
+  RequestBuilder post(String url);
 
-  public RequestBuilder post(String url, String data);
-
-
-  public RequestBuilder put(String url);
-
-  public RequestBuilder put(String url, String data);
+  RequestBuilder post(String url, String data);
 
 
-  public RequestBuilder delete(String url);
+  RequestBuilder put(String url);
+
+  RequestBuilder put(String url, String data);
 
 
-  public RequestBuilder timeout(Timeout timeout);
-
-  public RequestBuilder timeout(Integer amount, TimeUnit measure);
+  RequestBuilder delete(String url);
 
 
-  public RequestBuilder retry(Integer retry);
+  RequestBuilder timeout(Timeout timeout);
 
-  public RequestBuilder data(String data);
+  RequestBuilder timeout(Integer amount, TimeUnit measure);
+
+
+  RequestBuilder retry(Integer retry);
+
+  RequestBuilder data(String data);
 
 }

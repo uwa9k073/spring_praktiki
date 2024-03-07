@@ -9,7 +9,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Message implements Copyable {
-
   private UUID id;
   private UUID chatId;
   private UUID ownerId;
