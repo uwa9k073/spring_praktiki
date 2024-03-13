@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id "io.freefair.lombok" version "8.6"
+    // id 'checkstyle'
 }
 
 group = "com.github.uwa9k073"
@@ -31,5 +32,19 @@ dependencies {
 }
 
 tasks.test {
+    // skipForTask('build')
     useJUnitPlatform()
 }
+
+
+// configurations {
+//   checkstyleOverride
+// }
+
+// dependencies {
+//   checkstyleOverride('com.puppycrawl.tools:checkstyle:6.11.2')
+// }
+
+// tasks.withType(Checkstyle) {
+//   checkstyleClasspath = project.configurations.checkstyleOverride
+// }
