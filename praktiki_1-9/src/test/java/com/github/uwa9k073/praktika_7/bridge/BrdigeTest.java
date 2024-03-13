@@ -32,7 +32,7 @@ public class BrdigeTest {
 
   @Test
   public void Test_Linux_Bridge() {
-    this.api = new WinAPI();
+    this.api = new LinuxAPI();
 
     this.shape = new Circle(api);
     assertEquals("Draw Linux circle", shape.draw());
