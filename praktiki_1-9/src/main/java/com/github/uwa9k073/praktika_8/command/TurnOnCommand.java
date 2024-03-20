@@ -1,11 +1,11 @@
 package com.github.uwa9k073.praktika_8.command;
 
 
-public class TurnOnLightCommand<E extends Turn> implements Command{
+public class TurnOnCommand<E extends Turn> implements Command{
 
   private final Turn impl;
 
-  TurnOnLightCommand(E impl){
+  TurnOnCommand(E impl){
     this.impl = impl;
   }
 
