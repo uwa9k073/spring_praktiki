@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.github.uwa9k073'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.github.uwa9k073.Main'
+    }
+    archiveBaseName = 'praktika_9'
+}
+
+task buildDocker(type: Exec) {
+    dependsOn jar
+    workingDir file('docker')
+    commandLine '/usr/local/bin/docker', 'build', '-t', 'praktika_9', '-f', 'Dockerfile', '..'
+}
+
+task runDocker(type: Exec) {
+    dependsOn buildDocker
+    commandLine '/usr/local/bin/docker', 'run', '--rm', 'praktika_9:latest'
+}
