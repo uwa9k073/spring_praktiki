@@ -4,9 +4,6 @@ plugins {
 
 group = 'com.github.uwa9k073'
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')

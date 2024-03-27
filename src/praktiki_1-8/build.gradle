@@ -17,11 +17,6 @@ configurations {
     }
 }
 
-repositories {
-    mavenCentral()
-    google()
-}
-
 ext {
     set('snippetsDir', file("build/generated-snippets"))
 }
